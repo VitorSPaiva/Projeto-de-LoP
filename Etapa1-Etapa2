@@ -8,10 +8,8 @@
 var x = 200
 var y = 350
 function setup() {
-  createCanvas(400, 400);
-  
+  createCanvas(400, 400); 
 }
-
 function draw() {
   if(keyIsDown(LEFT_ARROW)){
     x -= 5;
@@ -25,8 +23,7 @@ function draw() {
   if(keyIsDown(DOWN_ARROW)){
     y += 5;
     }
-  background(135,206,235)
-;
+  background(135,206,235);
   fill(255,0,0);
   rect(200,20,50,50);
   fill(255,204,0);

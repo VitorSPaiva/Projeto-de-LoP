@@ -1,0 +1,65 @@
+/* 
+    Equipe: 
+        José Vitor Santos de Paiva - Subturma B (Líder) 
+        Camila Louyse Oliveira da Rocha - Subturma B 
+       
+       Etapa 1 e 2
+*/
+var xi = 175
+var yi = 20
+dsp = false
+xj = 200
+yj = 350
+function setup() {
+  createCanvas(400, 400);
+}
+function draw(){
+  if(!dsp){
+  xd = xj
+  yd = yj
+  }
+  if(keyIsDown(LEFT_ARROW)){
+    xj -= 5;
+    }
+  if(keyIsDown(RIGHT_ARROW)){
+    xj += 5;
+    }
+  if(keyIsDown(UP_ARROW)){
+    yj -= 5;
+    }
+  if(keyIsDown(DOWN_ARROW)){
+    yj += 5;
+    }
+  background(135,206,235);
+  fill(255,0,0);
+  rect(xi,yi,50,50);
+  yi += 3
+  if(yi>400){
+    yi = random(-500,-50);
+    xi = random(30,350);
+  }
+  fill(255,204,0);
+   ellipse(xd,yd,8,8);
+    if (keyIsDown(CONTROL) && (!dsp) ){ 
+    dsp = true;
+  }
+  if(dsp){
+    yd = yd - 5;
+    if (yd < 0) { 
+      dsp = false; 
+    }
+}
+  ellipse(xj,yj,70,50);
+  if(xj > 400){
+     xj = 400
+  }
+  if(xj < 0){
+    xj = 0
+  }
+if(yj > 400){
+     yj = 400
+  }
+  if(yj < 0){
+    yj = 0
+  }
+}

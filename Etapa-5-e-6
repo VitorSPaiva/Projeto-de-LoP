@@ -73,8 +73,8 @@ if(yj > 400){
   fill(0, 100, 0);
   textSize(18);
   text('Vidas: '+vds, 10, 30);
-  text('Pontos: '+pts, 150, 30);
-  text('Estágio: '+stg, 280, 30);
+  text('Pontos: '+pts, 160, 30);
+  text('Estágio: '+stg, 310, 30);
   if(dist(xj, yj, xi, yi) < ri + rj ){
   vds--;
   yi = random(-500,-50);

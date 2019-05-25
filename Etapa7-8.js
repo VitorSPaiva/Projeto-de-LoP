@@ -63,7 +63,7 @@ for(i=0;i<qig;i++){
       break;
       }
     }
-    //Disparos: Movimentação
+    //Disparos: Intervalo de tempo.
     time = 6;
   }
   time--;

@@ -14,7 +14,7 @@ var intro = true, jogo = false, vtr = false, drt = false, crd = false, Vitor = f
 //Var de cena
 var cena = false, ysi = -150, ysvel = 0.5, imgcn;
 //Variaveis do boss
-var bvds = 2000, xbi = 200, ybi = 50, boss = false, rbi = 60, ybvel = 0.2, imgbss;
+var bvds = 600, xbi = 200, ybi = 50, boss = false, rbi = 60, ybvel = 0.2, imgbss;
 //Variaveis de disparo do boss
 var dbx = [], dby= [], dbr = 5, dybvl = [], dxbvl = [], imgdpsbss;
 //Variáveis da tela: vida, pontos, estágio, nivel, tempo.
